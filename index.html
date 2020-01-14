@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="web/css/main.css">
+    <link rel="shortcut icon" href="web/img/favaicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display:400,900|Roboto:100,300,400,900&display=swap" rel="stylesheet">
+    <title>Tajam</title>
+</head>
+
+<body>
+    <section class="firstPage" id="home">
+        <div class="header">
+            <div class="header__logo">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="44" height="50" viewBox="0 0 44 50">
+                <image xlink:href="data:img/png;base64,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" width="44" height="50"/>
+              </svg>
+                <p class="header__logo_title">tajam</p>
+            </div>
+            <div class="header__nav">
+                <nav class="header__nav_position">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#expertise">Expertise</a>
+                    <a href="#teams">Teams</a>
+                    <a href="#works">Works</a>
+                    <a href="#people">People Say</a>
+                    <a href="#contacts">Contact</a>
+                </nav>
+            </div>
+            <div class="header__hamburger">
+                <label>
+                    <input type="checkbox" name="" id="">
+                    <div class="header__hamburger_img "></div>
+                    <div class="header__hamburger_img1 "></div>
+                    <div class="header__hamburger_img2 "></div>
+               
+                <nav class="header__hamburger_position">
+                    <div>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#expertise">Expertise</a>
+                        <a href="#teams">Teams</a>
+                        <a href="#works">Works</a>
+                        <a href="#people">People Say</a>
+                        <a href="#contacts">Contact</a>
+                </div>
+                </nav>
+             </label>
+            </div>
+        </div>
+        <div class="title">
+            <div class="title__main">
+                We Are Awesome Creative Agency
+            </div>
+            <div class="title__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis accusantium unde architecto at aperiam velit nesciunt placeat similique! Porro repellendus sunt totam odit, similique ea reiciendis, et consequatur accusantium ratione nobis accusamus.
+                Rem laudantium cupiditate ducimus amet ea doloribus vel!
+            </div>
+            <button class="btn">
+                Learn More
+            </button>
+        </div>
+        <div class="circles">
+            <label>
+            <input type="checkbox" name="" id="" checked="checked">
+       <div></div>
+        </label>
+            <label>
+            <input type="checkbox" name="" id="">
+            <div></div>
+        </label>
+            <label>
+            <input type="checkbox" name="" id="">
+            <div></div>
+        </label>
+            <label>
+            <input type="checkbox" name="" id="">
+            <div></div>
+        </label>
+        </div>
+    </section>
+    <section class="story" id="about">
+        <div class="story__logo">
+            <img src="web/img/ourStory.png" alt="traiangle logo">
+        </div>
+        <div class="story__text">
+            <h3 class="story__text_logo">
+                Our Story
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fuga rerum blanditiis adipisci. Praesentium, harum alias quos tempora earum perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, obcaecati.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, dolorem fugit. Voluptatibus quidem doloribus voluptatum omnis quibusdam unde necessitatibus accusamus.</p>
+            <button class="btn">learn more</button>
+        </div>
+    </section>
+    <section class="video">
+        <div class="video__logo">
+            <img src="web/img/Play Icon.png" alt="Play logo">
+        </div>
+        <div class="video__text">Watch Our Story</div>
+    </section>
+    <section class="expertise" id="expertise">
+        <div class="expertise__title ">
+            <h2 class="expertise__title-name">
+                expertise
+            </h2>
+            <p class="expertise__title_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, earum!</p>
+        </div>
+        <div class="expertise__example">
+            <div class="expertise__example_item modification border_left">
+                <img src="web/img/expertiseSearch.png" alt="web design">
+                <h2>
+                    web design & development
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nobis earum necessitatibus provident iusto!</p>
+            </div>
+            <div class="expertise__example_item border_finish">
+                <img src="web/img/expertiseBranding.png" alt="branding">
+                <h2>
+                    branding identity
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nobis earum necessitatibus provident iusto!</p>
+            </div>
+            <div class="expertise__example_item border_left">
+                <img src="web/img/expertiseMobile.png" alt="mobile">
+                <h2>
+                    mobile app
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nobis earum necessitatibus provident iusto!</p>
+            </div>
+
+            <div class="expertise__example_item border border_finish modification border_options">
+                <img src="web/img/expertiseSearch.png" alt="search icon">
+                <h2>
+                    search engine optimization
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nobis earum necessitatibus provident iusto!</p>
+            </div>
+            <div class="expertise__example_item border border_left">
+                <img src="web/img/expertiseGame.png" alt="game development">
+                <h2>
+                    game development
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nobis earum necessitatibus provident iusto!</p>
+            </div>
+            <div class="expertise__example_item border border_finally">
+                <img src="web/img/expertiseMade.png" alt="heart">
+                <h2>
+                    made with love
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nobis earum necessitatibus provident iusto!</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="team" id="teams">
+        <div class="team__title">
+            <h2 class="team__title_name">
+                meet our amazing team
+            </h2>
+            <p class="team__title_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+        </div>
+        <div class="team__wrap">
+            <div class="team__pic">
+                <img src="web/img/ceo.jpg" alt="Semf Ucuk">
+                <div class="team__pic_text">
+                    <h4>Semf Ucuk</h4>
+                    <h5>CEO & FOUNDER</h5>
+                </div>
+            </div>
+            <div class="team__pic">
+                <img src="web/img/eng.jpg" alt="DIK ADALIN">
+                <div class="team__pic_text">
+                    <h4>DIK ADALIN</h4>
+                    <h5>ENGINEERING</h5>
+                </div>
+            </div>
+            <div class="team__pic">
+                <img src="web/img/des.jpg" alt="JENG KOL">
+                <div class="team__pic_text">
+                    <h4>JENG KOL</h4>
+                    <h5>DESIGNER</h5>
+                </div>
+            </div>
+            <div class="team__pic">
+                <img src="web/img/marketing.jpg" alt="PET ROMAK">
+                <div class="team__pic_text">
+                    <h4>PET ROMAK</h4>
+                    <h5>MARKETING</h5>
+                </div>
+            </div>
+        </div>
+        <div class="team__footer">
+            <p>
+                Become part of our great team, let's join us!
+            </p>
+            <button class="btn" style="margin-bottom: 40px;">We are hiring</button>
+        </div>
+    </section>
+    <section class="works" id="works">
+        <div class="works__title">
+            <h3 class="works__title_name">
+                our works
+            </h3>
+            <p class="works__title_text">
+                See All Projects in dribble
+                <img src="web/img/webExamples/arrow.png" alt="arrow">
+            </p>
+        </div>
+        <div class="work__galery">
+            <img src="web/img/webExamples/ex1.jpeg" alt="first work">
+            <img src="web/img/webExamples/ex2.jpeg" alt="second work">
+            <img src="web/img/webExamples/ex3.jpeg" alt="third work">
+            <img src="web/img/webExamples/ex4.jpeg" alt="fourth work">
+            <img src="web/img/webExamples/ex5.jpeg" alt="fifth work">
+            <img src="web/img/webExamples/ex6.jpeg" alt="sixth work">
+            <img src="web/img/webExamples/ex7.jpeg" alt="seventh work">
+            <img src="web/img/webExamples/ex8.jpeg" alt="eighth work">
+            <img src="web/img/webExamples/ex9.jpeg" alt="ninth work">
+            <img src="web/img/webExamples/ex10.jpeg" alt="tenth work">
+            <img src="web/img/webExamples/ex11.jpeg" alt="eleventh work">
+            <img src="web/img/webExamples/ex12.jpeg" alt="twelweth work">
+        </div>
+        <div class=" works__btn">
+            <button class="btn">load more</button>
+        </div>
+    </section>
+    <section class="faces" id="people">
+        <span class="faces__quotes">&ldquo;</span>
+        <p class="faces__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam animi rerum praesentium at, velit impedit corrupti. Incidunt libero nisi temporibus omnis ullam consectetur quis quisquam molestias nostrum, ad similique debitis odio iste non tenetur.
+            Accusantium assumenda ut provident placeat aut. Possimus aut adipisci earum optio odit dolor reprehenderit odio excepturi?
+        </p>
+        <div class="faces__employee">
+            <p class="faces__employee_name">JANE GALADRIEL</p>
+            <p class="faces__employee_position">CEO TENGKURE</p>
+        </div>
+        <div class="faces__img">
+            <img class="faces__img_arrow" src="web/img/faces/back.png" alt="arrow back">
+            <img src="web/img/faces/face1.png" alt="emplooyee one">
+            <img src="web/img/faces/face2.png" alt="emplooyee two">
+            <img src="web/img/faces/face3.png" alt="emplooyee three">
+            <img src="web/img/faces/face4.png" alt="emplooyee four">
+            <img src="web/img/faces/face5.png" alt="emplooyee five">
+            <img class="faces__img_arrow" src="web/img/faces/forward.png" alt="arrow foward">
+        </div>
+    </section>
+    <section class="clients">
+        <form class="clients__form" action="#" method="POST">
+            <fieldset class="clients__form_legend">
+                <legend> Give us a good news
+                </legend>
+                <input type="text" placeholder="Name" required>
+                <input type="email" name="" id="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required placeholder="Email">
+                <input type="text" name="" id="" required placeholder="Subject">
+                <textarea name="" id="" cols="30" rows="10" required placeholder="Your Message"></textarea>
+                <button class="btn" type="submit" style="margin: 20px 0;">Submit</button>
+            </fieldset>
+        </form>
+        <fieldset class="clients__items">
+            <legend>
+                our happy client
+            </legend>
+            <div class="clients__items_wrap">
+                <div class="clients__item_group">
+                    <img src="web/img/clients/Zara_Logo.png" alt="Zara Logo">
+                    <img src="web/img/clients/1280px-Barneys_New_York_Logo.png" alt="Barney's New York Logo">
+                    <img src="web/img/clients/Calvin_klein_logo.png" alt="Celvin Klein Logo">
+                    <img src="web/img/clients/Converse_logo.png" alt="Converse Logo">
+                    <img src="web/img/clients/1280px-Levi's_logo.png" alt="Levi's Logo">
+                </div>
+                <div class="clients__item_group">
+                    <img src="web/img/clients/Logo_of_Mango_(new).png" alt="Mango Logo">
+                    <img src="web/img/clients/1280px-Gucci_Logo.png" alt="Gucci Logo">
+                    <img src="web/img/clients/1280px-Logo_NIKE.png" alt="Nike Logo">
+                    <img src="web/img/clients/Puma_Logo.png" alt="Puma Logo">
+                    <img src="web/img/clients/Billabong.png" alt="BillaBong Logo">
+                </div>
+            </div>
+        </fieldset>
+    </section>
+    <footer class="footer" id="contacts">
+        <div class="footer__items">
+            <div class="footer__items_logo">
+                <img src="web/img/footer/tajam.png" alt="Tajam Logo">
+                <span>tajam</span>
+                <p>
+                    lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
+                </p>
+            </div>
+            <div class="footer__items_address">
+                <h3>
+                    OUR STUDIO
+                </h3>
+                <div class="footer__items_address_positon">
+                    <img src="web/img/footer/address.png" alt="adress logo">
+                    <p>
+                        Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia
+                    </p>
+                </div>
+                <div class="footer__items_address_positon">
+                    <img src="web/img/footer/phone351.png" alt="phone Logo">
+                    <p>
+                        (+62) 21-2224 3333
+                    </p>
+                </div>
+            </div>
+            <div class="footer__items_subscribe">
+                <h3>
+                    Stay in touch
+                </h3>
+                <form class="footer__items_form" action="#" method="POST">
+                    <input type="email" name="" id="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required placeholder="Subscribe our newsletter">
+                    <button type="submit"><img src="web/img/footer/btnLabel.png" alt="button logo"></button>
+                </form>
+                <p>
+                    <a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook-f"></i></a>
+                    <a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="http://www.dribbble.com" target="_blank"><i class="fa fa-dribbble"></i></a>
+                    <a href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="http://www.google.com" target="_blank"><i class="fa fa-google-plus"></i></a>
+                    <a href="http://www.youtube.com" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                </p>
+            </div>
+        </div>
+        <div class="footer__finish">
+            <div class="footer__finish_links">
+                <a>help</a>
+                <a>terms & condition</a>
+                <a>privacy</a>
+            </div>
+            <div class="footer__finish_copy">
+                Copyright © 2015 - Tajem Creative
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
